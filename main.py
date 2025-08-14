@@ -3,6 +3,9 @@ import os
 import tempfile
 import logging
 from flask import Flask, request, abort
+import sys
+import imghdr_pure as imghdr
+sys.modules['imghdr']=imghdr
 import telegram
 import openai
 from gtts import gTTS
