@@ -8,7 +8,7 @@ import openai
 from gtts import gTTS
 
 # --- Configuración básica ---
-TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 # Ruta secreta opcional para mayor seguridad (recomendada)
 WEBHOOK_SECRET = os.environ.get("WEBHOOK_SECRET")  # ej: "mi-ruta-secreta-123"
