@@ -165,10 +165,6 @@ def handle_update(update_json):
     bot.send_message(chat_id=chat_id, text=reply)
     return "OK"
 
-
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
-    
 # --- Punto de entrada para ejecutar localmente (útil en pruebas) ---
 if __name__ == "__main__":
     # En producción Render usará gunicorn que apunta a main:app
